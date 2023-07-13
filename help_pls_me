@@ -1,0 +1,389 @@
+[INFO]:    Building pyjnius for armeabi-v7a
+[INFO]:    jnius apparently isn't already in site-packages
+[INFO]:    Cythonizing anything necessary in pyjnius
+[INFO]:    -> directory context /home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius
+[DEBUG]:   -> running python3 -c import sys; print(sys.path)
+[DEBUG]:        ['', '/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/Lib', '/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/Lib/site-packages', '/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/build/scripts-3.10', '/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/build/temp.linux-x86_64-3.10', '/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/build/lib.linux-x86_64-3.10', '/usr/local/lib/python310.zip', '/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/Lib']
+[DEBUG]:   cwd is /home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius
+[INFO]:    Trying first build of pyjnius to get cython files: this is expected to fail
+[DEBUG]:   -> running python3 setup.py build_ext -v
+[DEBUG]:        warning: [options] bootstrap class path not set in conjunction with -source 7
+[DEBUG]:        error: Source option 7 is no longer supported. Use 8 or later.
+[DEBUG]:        error: Target option 7 is no longer supported. Use 8 or later.
+[DEBUG]:        Traceback (most recent call last):
+[DEBUG]:          File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius/setup.py", line 83, in <module>
+[DEBUG]:            compile_native_invocation_handler(JAVA)
+[DEBUG]:          File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius/setup.py", line 73, in compile_native_invocation_handler
+[DEBUG]:            subprocess.check_call([
+[DEBUG]:          File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/Lib/subprocess.py", line 369, in check_call
+[DEBUG]:            raise CalledProcessError(retcode, cmd)
+[DEBUG]:        subprocess.CalledProcessError: Command '['/usr/lib/jvm/java-21-openjdk-amd64/bin/javac', '-target', '1.7', '-source', '1.7', 'jnius/src/org/jnius/NativeInvocationHandler.java']' returned non-zero exit status 2.
+Exception in thread background thread for pid 304215:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 1641, in wrap
+    fn(*rgs, **kwargs)
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 2569, in background_thread
+    handle_exit_code(exit_code)
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 2269, in fn
+    return self.command.handle_command_exit_code(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 869, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_1: 
+
+  RAN: /home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/python3 setup.py build_ext -v
+
+  STDOUT:
+warning: [options] bootstrap class path not set in conjunction with -source 7
+error: Source option 7 is no longer supported. Use 8 or later.
+error: Target option 7 is no longer supported. Use 8 or later.
+Traceback (most recent call last):
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius/setup.py", line 83, in <module>
+    compile_native_invocation_handler(JAVA)
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius/setup.py", line 73, in compile_native_invocation_handler
+    subprocess.check_call([
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/Lib/subprocess.py", line 369, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/usr/lib/jvm/java-21-openjdk-amd64/bin/javac', '-target', '1.7', '-source', '1.7', 'jnius/src/org/jnius/NativeInvocationHandler.java']' returned non-zero exit status 2.
+
+
+  STDERR:
+
+[INFO]:    pyjnius first build failed (as expected)
+[INFO]:    Running cython where appropriate
+[INFO]:    Cythonize jnius/jnius.pyx
+[DEBUG]:   -> running python3 -cimport sys; from Cython.Compiler.Main import setuptools_main; sys.exit(setuptools_main()); ./jnius/jnius.pyx
+[DEBUG]:        /home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/Cython/Compiler/Main.py:369: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius/jnius/jnius.pyx
+[DEBUG]:          tree = Parsing.p_module(s, pxd, full_module_name)
+[DEBUG]:   
+[DEBUG]:        Error compiling Cython file:
+[DEBUG]:        ------------------------------------------------------------
+[DEBUG]:        ...
+[DEBUG]:        import sys
+[DEBUG]:        import traceback
+[DEBUG]:   
+[DEBUG]:        include "jnius_compat.pxi"
+[DEBUG]:        include "jni.pxi"
+[DEBUG]:        include "config.pxi"
+[DEBUG]:        ^
+[DEBUG]:        ------------------------------------------------------------
+[DEBUG]:   
+[DEBUG]:        jnius/jnius.pyx:100:0: 'config.pxi' not found
+[DEBUG]:   
+[DEBUG]:        Error compiling Cython file:
+[DEBUG]:        ------------------------------------------------------------
+[DEBUG]:        ...
+[DEBUG]:   
+[DEBUG]:        include "jnius_compat.pxi"
+[DEBUG]:        include "jni.pxi"
+[DEBUG]:        include "config.pxi"
+[DEBUG]:   
+[DEBUG]:        IF JNIUS_PLATFORM == "android":
+[DEBUG]:          ^
+[DEBUG]:        ------------------------------------------------------------
+[DEBUG]:   
+[DEBUG]:        jnius/jnius.pyx:102:3: Compile-time name 'JNIUS_PLATFORM' not defined
+[DEBUG]:   
+[DEBUG]:        Error compiling Cython file:
+[DEBUG]:        ------------------------------------------------------------
+[DEBUG]:        ...
+[DEBUG]:        include "jni.pxi"
+[DEBUG]:        include "config.pxi"
+[DEBUG]:   
+[DEBUG]:        IF JNIUS_PLATFORM == "android":
+[DEBUG]:            include "jnius_jvm_android.pxi"
+[DEBUG]:        ELIF JNIUS_PLATFORM == "win32":
+[DEBUG]:            ^
+[DEBUG]:        ------------------------------------------------------------
+[DEBUG]:   
+[DEBUG]:        jnius/jnius.pyx:104:5: Compile-time name 'JNIUS_PLATFORM' not defined
+[DEBUG]:   
+[DEBUG]:        Error compiling Cython file:
+[DEBUG]:        ------------------------------------------------------------
+[DEBUG]:        ...
+[DEBUG]:        include "config.pxi"
+[DEBUG]:        ^
+[DEBUG]:        ------------------------------------------------------------
+[DEBUG]:   
+[DEBUG]:        jnius/jnius_jvm_dlopen.pxi:1:0: 'config.pxi' not found
+[DEBUG]:   
+Exception in thread background thread for pid 304241:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 1641, in wrap
+    fn(*rgs, **kwargs)
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 2569, in background_thread
+    handle_exit_code(exit_code)
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 2269, in fn
+    return self.command.handle_command_exit_code(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 869, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_1: 
+
+  RAN: /home/sergei/PythonProjects/GPS_APP/kivy_venv/bin/python3 '-cimport sys; from Cython.Compiler.Main import setuptools_main; sys.exit(setuptools_main());' ./jnius/jnius.pyx
+
+  STDOUT:
+/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/Cython/Compiler/Main.py:369: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius/jnius/jnius.pyx
+  tree = Parsing.p_module(s, pxd, full_module_name)
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+import sys
+import traceback
+
+include "jnius_compat.pxi"
+include "jni.pxi"
+include "config.pxi"
+^
+------------------------------------------------------------
+
+jnius/jnius.pyx:100:0: 'config.pxi' not found
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+
+include "jnius_compat.pxi"
+include "jni.pxi"
+include "config.pxi"
+
+IF JNIUS_PLATFORM == "android":
+  ^
+------------------------------------------------------------
+
+jnius/jnius.pyx:102:3: Compile-time name 'JNIUS_PLATFORM' not defined
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+include "jni.pxi"
+include "config.pxi"
+
+IF JNIUS_PLATFORM == "android":
+    include "jnius_jvm_android.pxi"
+ELIF JNIUS_PLATFORM == "win32":
+    ^
+------------------------------------------------------------
+
+jnius/jnius.pyx:104:5: Compile-time name 'JNIUS_PLATFORM' not defined
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+include "config.pxi"
+^
+------------------------------------------------------------
+
+jnius/jnius_jvm_dlopen.pxi:1:0: 'config.pxi' not found
+
+
+
+  STDERR:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 1312, in <module>
+    main()
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/entrypoints.py", line 18, in main
+    ToolchainCL()
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 734, in __init__
+    getattr(self, command)(args)
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 153, in wrapper_func
+    build_dist_from_args(ctx, dist, args)
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 212, in build_dist_from_args
+    build_recipes(build_order, python_modules, ctx,
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/build.py", line 504, in build_recipes
+    recipe.build_arch(arch)
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/recipe.py", line 1031, in build_arch
+    self.build_cython_components(arch)
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/recipe.py", line 1056, in build_cython_components
+    self.cythonize_build(env=env)
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/recipe.py", line 1104, in cythonize_build
+    self.cythonize_file(env, build_dir, join(root, filename))
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/recipe.py", line 1093, in cythonize_file
+    shprint(python_command, "-c"
+  File "/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/python-for-android/pythonforandroid/logger.py", line 167, in shprint
+    for line in output:
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 915, in next
+    self.wait()
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 845, in wait
+    self.handle_command_exit_code(exit_code)
+  File "/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/sh.py", line 869, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_1: 
+
+  RAN: /home/sergei/PythonProjects/GPS_APP/kivy_venv/bin/python3 '-cimport sys; from Cython.Compiler.Main import setuptools_main; sys.exit(setuptools_main());' ./jnius/jnius.pyx
+
+  STDOUT:
+/home/sergei/PythonProjects/GPS_APP/kivy_venv/lib/python3.11/site-packages/Cython/Compiler/Main.py:369: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/armeabi-v7a__ndk_target_21/pyjnius/jnius/jnius.pyx
+  tree = Parsing.p_module(s, pxd, full_module_name)
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+import sys
+import traceback
+
+include "jnius_compat.pxi"
+include "jni.pxi"
+include "config.pxi"
+^
+------------------------------------------------------------
+
+jnius/jnius.pyx:100:0: 'config.pxi' not found
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+
+include "jnius_compat.pxi"
+include "jni.pxi"
+include "config.pxi"
+
+IF JNIUS_PLATFORM == "android":
+  ^
+------------------------------------------------------------
+
+jnius/jnius.pyx:102:3: Compile-time name 'JNIUS_PLATFORM' not defined
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+include "jni.pxi"
+include "config.pxi"
+
+IF JNIUS_PLATFORM == "android":
+    include "jnius_jvm_android.pxi"
+ELIF JNIUS_PLATFORM == "win32":
+    ^
+------------------------------------------------------------
+
+jnius/jnius.pyx:104:5: Compile-time name 'JNIUS_PLATFORM' not defined
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+include "config.pxi"
+^
+------------------------------------------------------------
+
+jnius/jnius_jvm_dlopen.pxi:1:0: 'config.pxi' not found
+
+
+
+  STDERR:
+
+
+# Command failed: ['/home/sergei/PythonProjects/GPS_APP/kivy_venv/bin/python3', '-m', 'pythonforandroid.toolchain', 'create', '--dist_name=myapp', '--bootstrap=sdl2', '--requirements=python3,kivy,plyer,kivy-garden.mapview,mapview,cython,jnius', '--arch=arm64-v8a', '--arch=armeabi-v7a', '--copy-libs', '--color=always', '--storage-dir=/home/sergei/PythonProjects/GPS_APP/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a', '--ndk-api=21', '--ignore-setup-py', '--debug']
+# ENVIRONMENT:
+#     SHELL = '/bin/bash'
+#     SESSION_MANAGER = 'local/sergei-Inspiron-5485:@/tmp/.ICE-unix/1700,unix/sergei-Inspiron-5485:/tmp/.ICE-unix/1700'
+#     QT_ACCESSIBILITY = '1'
+#     COLORTERM = 'truecolor'
+#     XDG_CONFIG_DIRS = '/etc/xdg/xdg-ubuntu:/etc/xdg'
+#     SSH_AGENT_LAUNCHER = 'openssh'
+#     XDG_MENU_PREFIX = 'gnome-'
+#     TERM_PROGRAM_VERSION = '1.80.0'
+#     XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG = '/etc/xdg/xdg-ubuntu:/etc/xdg'
+#     GNOME_DESKTOP_SESSION_ID = 'this-is-deprecated'
+#     GDK_BACKEND_VSCODE_SNAP_ORIG = ''
+#     LANGUAGE = 'en_US:en'
+#     LC_ADDRESS = 'ru_RU.UTF-8'
+#     GIO_MODULE_DIR_VSCODE_SNAP_ORIG = ''
+#     GNOME_SHELL_SESSION_MODE = 'ubuntu'
+#     LC_NAME = 'ru_RU.UTF-8'
+#     SSH_AUTH_SOCK = '/run/user/1000/keyring/ssh'
+#     KIVY_DEPS_ROOT = '/home/sergei/PythonProjects/GPS_APP/kivy-dependencies'
+#     XMODIFIERS = '@im=ibus'
+#     DESKTOP_SESSION = 'ubuntu'
+#     LC_MONETARY = 'ru_RU.UTF-8'
+#     BAMF_DESKTOP_FILE_HINT = '/var/lib/snapd/desktop/applications/code_code.desktop'
+#     GTK_MODULES = 'gail:atk-bridge'
+#     PWD = '/home/sergei/PythonProjects/GPS_APP'
+#     GSETTINGS_SCHEMA_DIR = '/home/sergei/snap/code/133/.local/share/glib-2.0/schemas'
+#     XDG_SESSION_DESKTOP = 'ubuntu'
+#     LOGNAME = 'sergei'
+#     GTK_EXE_PREFIX = '/snap/code/133/usr'
+#     XDG_SESSION_TYPE = 'wayland'
+#     SYSTEMD_EXEC_PID = '1733'
+#     XAUTHORITY = '/run/user/1000/.mutter-Xwaylandauth.242X71'
+#     VSCODE_GIT_ASKPASS_NODE = '/snap/code/133/usr/share/code/code'
+#     IM_CONFIG_CHECK_ENV = '1'
+#     GJS_DEBUG_TOPICS = 'JS ERROR;JS LOG'
+#     HOME = '/home/sergei'
+#     USERNAME = 'sergei'
+#     IM_CONFIG_PHASE = '1'
+#     LC_PAPER = 'ru_RU.UTF-8'
+#     LANG = 'en_US.UTF-8'
+#     XDG_CURRENT_DESKTOP = 'Unity'
+#     VIRTUAL_ENV = '/home/sergei/PythonProjects/GPS_APP/kivy_venv'
+#     WAYLAND_DISPLAY = 'wayland-0'
+#     GIT_ASKPASS = '/snap/code/133/usr/share/code/resources/app/extensions/git/dist/askpass.sh'
+#     INVOCATION_ID = 'cdb901972fef4e198ffe951559b4af89'
+#     MANAGERPID = '1540'
+#     CHROME_DESKTOP = 'code-url-handler.desktop'
+#     GJS_DEBUG_OUTPUT = 'stderr'
+#     VSCODE_GIT_ASKPASS_EXTRA_ARGS = '--ms-enable-electron-run-as-node'
+#     GNOME_SETUP_DISPLAY = ':1'
+#     GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG = ''
+#     GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG = ''
+#     XDG_SESSION_CLASS = 'user'
+#     TERM = 'xterm-256color'
+#     LC_IDENTIFICATION = 'ru_RU.UTF-8'
+#     GTK_PATH = '/snap/code/133/usr/lib/x86_64-linux-gnu/gtk-3.0'
+#     USER = 'sergei'
+#     GTK_PATH_VSCODE_SNAP_ORIG = ''
+#     VSCODE_GIT_IPC_HANDLE = '/run/user/1000/vscode-git-c4d78d68de.sock'
+#     DISPLAY = ':0'
+#     SHLVL = '1'
+#     LOCPATH = '/snap/code/133/usr/lib/locale'
+#     LC_TELEPHONE = 'ru_RU.UTF-8'
+#     QT_IM_MODULE = 'ibus'
+#     LC_MEASUREMENT = 'ru_RU.UTF-8'
+#     GTK_EXE_PREFIX_VSCODE_SNAP_ORIG = ''
+#     PAPERSIZE = 'a4'
+#     VIRTUAL_ENV_PROMPT = '(kivy_venv) '
+#     XDG_RUNTIME_DIR = '/run/user/1000'
+#     PS1 = ('\\[\x1b]633;A\x07\\](kivy_venv) '
+ '\\[\x1b]633;A\x07\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$ '
+ '\\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]')
+#     XDG_DATA_DIRS_VSCODE_SNAP_ORIG = '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'
+#     DEBUGINFOD_URLS = 'https://debuginfod.ubuntu.com '
+#     LC_TIME = 'ru_RU.UTF-8'
+#     VSCODE_GIT_ASKPASS_MAIN = '/snap/code/133/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'
+#     JOURNAL_STREAM = '8:34928'
+#     XDG_DATA_DIRS = '/home/sergei/snap/code/133/.local/share:/home/sergei/snap/code/133:/snap/code/133/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'
+#     GDK_BACKEND = 'x11'
+#     PATH = '/home/sergei/.buildozer/android/platform/apache-ant-1.9.4/bin:/home/sergei/PythonProjects/GPS_APP/kivy_venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sergei/.local/bin/'
+#     GDMSESSION = 'ubuntu'
+#     ORIGINAL_XDG_CURRENT_DESKTOP = 'ubuntu:GNOME'
+#     GTK_IM_MODULE_FILE = '/home/sergei/snap/code/common/.cache/immodules/immodules.cache'
+#     DBUS_SESSION_BUS_ADDRESS = 'unix:path=/run/user/1000/bus'
+#     LOCPATH_VSCODE_SNAP_ORIG = ''
+#     GIO_MODULE_DIR = '/home/sergei/snap/code/common/.cache/gio-modules'
+#     GIO_LAUNCHED_DESKTOP_FILE_PID = '206197'
+#     GIO_LAUNCHED_DESKTOP_FILE = '/var/lib/snapd/desktop/applications/code_code.desktop'
+#     LC_NUMERIC = 'ru_RU.UTF-8'
+#     TERM_PROGRAM = 'vscode'
+#     _ = '/home/sergei/PythonProjects/GPS_APP/kivy_venv/bin/buildozer'
+#     PACKAGES_PATH = '/home/sergei/.buildozer/android/packages'
+#     ANDROIDSDK = '/home/sergei/.buildozer/android/platform/android-sdk'
+#     ANDROIDNDK = '/home/sergei/.buildozer/android/platform/android-ndk-r25b'
+#     ANDROIDAPI = '31'
+#     ANDROIDMINAPI = '21'
+# 
+# Buildozer failed to execute the last command
+# The error might be hidden in the log above this error
+# Please read the full log, and search for it before
+# raising an issue with buildozer itself.
+# In case of a bug report, please add a full log with log_level = 2
